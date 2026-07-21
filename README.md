@@ -1,44 +1,56 @@
 # Boids Algorithm Visualizer
 
-This project is a personal experiment aimed at visualizing the **Boids algorithm**, which simulates the flocking
-behavior of birds in 2D space. The algorithm is based on a simple set of rules that dictate how individual "boids"
-(bird-objects) interact with each other to create collective motion, resembling flocking, schooling, or herding
-behavior.
+> **Archived project:** This repository contains my first attempt at implementing and visualizing the Boids algorithm. It is an older experiment and is no longer being developed or maintained.
 
-*Unfortunately it is not yet finished, and I steal consider it work in progress.*
+A newer approach to the same problem is available here:
+
+**[View the newer Boids implementation](https://github.com/Rejman333/FlockingAlgorithm)**
+
+## Demo
+
+![Boids Algorithm Visualizer](media/boids.gif)
+
+## About
+
+This project is a personal experiment created to visualize the **Boids algorithm**, which simulates flocking behavior in a two-dimensional space.
+
+Each boid follows a small set of local rules. When those rules are applied across the group, they produce collective movement resembling flocking, schooling, or herding.
 
 ## Features
 
-- **Real-time visualization** of the Boids algorithm, simulating natural flocking behavior in 2D space.
-- **Dynamic parameter adjustments**: Tune flocking parameters like cohesion, alignment, and separation to see how they
-  affect the behavior of the boids.
+* Real-time visualization of boid movement in 2D space.
+* Adjustable cohesion, alignment, and separation parameters.
+* A simple demonstration of how local behavior can produce complex group movement.
 
-## How it Works
+## How It Works
 
-The Boids algorithm works by simulating individual boids (agents) that follow three basic rules:
+The Boids algorithm is based on three primary rules:
 
-1. **Coherence**: Boids move towards the average position of their neighbors.
-2. **Alignment**: Boids align their direction with the average heading of their neighbors.
-3. **Separation**: Boids steer to avoid crowding their neighbors.
+1. **Cohesion** — Boids move toward the average position of their nearby neighbors.
+2. **Alignment** — Boids adjust their direction to match the average heading of nearby neighbors.
+3. **Separation** — Boids steer away from nearby neighbors to avoid overcrowding.
 
-By combining these rules, the boids can create complex and realistic flocking behavior. This visualization allows users
-to see how different weights on these rules influence the overall movement of the flock.
+Combining these rules creates natural-looking flocking behavior. Adjusting their relative weights changes how the flock moves and groups together.
 
 ## Getting Started
 
 ### Prerequisites
 
-- **Python 3.x** is required to run the project.
-- You may need to install additional Python packages. Run the following to install all dependencies:
+* Python 3.x
+* The dependencies listed in `requirements.txt`
 
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-# ToDo
+Run the application using the appropriate entry-point script for the project.
 
-- [ ] Code refactor.
-- [ ] Implementing Spatial Partition.
-- [ ] Smoothing boids movement.
-- [ ] Adding feathers that enhance the project's aesthetics.
+## Project Status
+
+This repository is preserved as a record of my first Boids implementation. It reflects an early approach to the problem and is not intended for further development.
+
+For the newer implementation, architecture, and ongoing version of the project, visit:
+
+**[New Boids repository](https://github.com/Rejman333/FlockingAlgorithm)**
