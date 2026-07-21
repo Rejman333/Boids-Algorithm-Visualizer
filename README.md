@@ -8,7 +8,7 @@ A newer approach to the same problem is available here:
 
 ## Demo
 
-![Boids Algorithm Visualizer](media/boids2.gif)
+![Boids Algorithm Visualizer](https://github.com/Rejman333/Boids-Algorithm-Visualizer/blob/main/media/Boids.gif)
 
 ## About
 
